@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar'ı gizlemek için ekleyeceğin kodlar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer için */
+  scrollbar-width: none; /* Firefox için */
+}
+
+/* Body metni beyaz yapmak için */
+body {
+  @apply text-white;
+}
